@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8F706B61CE3ECFA02B249267 /* Pods_spd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906AA0C4D8107A3C7B48EE48 /* Pods_spd.framework */; };
+		BE42D4B51D8E9B9C006C8232 /* SOSNote.m in Sources */ = {isa = PBXBuildFile; fileRef = BE42D4B41D8E9B9C006C8232 /* SOSNote.m */; };
+		BE42D4B81D8E9D06006C8232 /* SOSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BE42D4B71D8E9D06006C8232 /* SOSCategory.m */; };
+		BEDB9B701D8E8FF300900AAC /* SOSHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDB9B6F1D8E8FF300900AAC /* SOSHTTPSessionManager.m */; };
 		C6AE93351D8E6F5500DD20AC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE93341D8E6F5500DD20AC /* LoginViewController.swift */; };
 		C6AE93371D8E7BD400DD20AC /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE93361D8E7BD400DD20AC /* NotesTableViewController.swift */; };
 		C6AEFA7D1D8E389500B788F2 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AEFA7C1D8E389500B788F2 /* TextViewController.swift */; };
@@ -22,6 +25,12 @@
 		16F8C6BC4FAABAA5A06E7E75 /* Pods-spd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-spd/Pods-spd.debug.xcconfig"; sourceTree = "<group>"; };
 		226CCC667C4961DDBFCB510D /* Pods-spd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spd.release.xcconfig"; path = "Pods/Target Support Files/Pods-spd/Pods-spd.release.xcconfig"; sourceTree = "<group>"; };
 		906AA0C4D8107A3C7B48EE48 /* Pods_spd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE42D4B31D8E9B9C006C8232 /* SOSNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSNote.h; sourceTree = "<group>"; };
+		BE42D4B41D8E9B9C006C8232 /* SOSNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSNote.m; sourceTree = "<group>"; };
+		BE42D4B61D8E9D06006C8232 /* SOSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSCategory.h; sourceTree = "<group>"; };
+		BE42D4B71D8E9D06006C8232 /* SOSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSCategory.m; sourceTree = "<group>"; };
+		BEDB9B6E1D8E8FF300900AAC /* SOSHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSHTTPSessionManager.h; sourceTree = "<group>"; };
+		BEDB9B6F1D8E8FF300900AAC /* SOSHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSHTTPSessionManager.m; sourceTree = "<group>"; };
 		C6AE93311D8E636100DD20AC /* spd-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "spd-Bridging-Header.h"; sourceTree = "<group>"; };
 		C6AE93341D8E6F5500DD20AC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C6AE93361D8E7BD400DD20AC /* NotesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +73,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BE42D4B91D8E9D0B006C8232 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE42D4B31D8E9B9C006C8232 /* SOSNote.h */,
+				BE42D4B41D8E9B9C006C8232 /* SOSNote.m */,
+				BE42D4B61D8E9D06006C8232 /* SOSCategory.h */,
+				BE42D4B71D8E9D06006C8232 /* SOSCategory.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BEDB9B711D8E8FF600900AAC /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				BEDB9B6E1D8E8FF300900AAC /* SOSHTTPSessionManager.h */,
+				BEDB9B6F1D8E8FF300900AAC /* SOSHTTPSessionManager.m */,
+			);
+			name = "Data Layer";
+			sourceTree = "<group>";
+		};
 		C6CDF8811D8DD28B00FB9177 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +116,8 @@
 			children = (
 				C6CDF88D1D8DD28B00FB9177 /* AppDelegate.swift */,
 				C6CDF88F1D8DD28B00FB9177 /* ViewController.swift */,
+				BE42D4B91D8E9D0B006C8232 /* Model */,
+				BEDB9B711D8E8FF600900AAC /* Data Layer */,
 				C6AE93311D8E636100DD20AC /* spd-Bridging-Header.h */,
 				C6CDF8911D8DD28B00FB9177 /* Main.storyboard */,
 				C6AE93341D8E6F5500DD20AC /* LoginViewController.swift */,
@@ -223,7 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEDB9B701D8E8FF300900AAC /* SOSHTTPSessionManager.m in Sources */,
+				BE42D4B51D8E9B9C006C8232 /* SOSNote.m in Sources */,
 				C6CDF8901D8DD28B00FB9177 /* ViewController.swift in Sources */,
+				BE42D4B81D8E9D06006C8232 /* SOSCategory.m in Sources */,
 				C6CDF88E1D8DD28B00FB9177 /* AppDelegate.swift in Sources */,
 				C6AE93351D8E6F5500DD20AC /* LoginViewController.swift in Sources */,
 				C6AEFA7D1D8E389500B788F2 /* TextViewController.swift in Sources */,

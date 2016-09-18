@@ -9,5 +9,9 @@
 #ifndef spd_Bridging_Header_h
 #define spd_Bridging_Header_h
 
+#import "SOSHTTPSessionManager.h"
+#import "SOSNote.h"
+#import "SOSCategory.h"
+
 
 #endif /* spd_Bridging_Header_h */
