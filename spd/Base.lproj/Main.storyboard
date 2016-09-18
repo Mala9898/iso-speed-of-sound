@@ -81,7 +81,6 @@
                         <outlet property="buttonBackgroundView" destination="fps-WI-bey" id="Atq-uM-2NB"/>
                         <outlet property="cardText" destination="h5i-gw-YG1" id="xpo-4z-lha"/>
                         <outlet property="cardTitle" destination="j7E-uP-F75" id="7Hx-JS-ti6"/>
-                        <outlet property="cardView" destination="NKo-wa-bQL" id="lPu-dT-Iw7"/>
                         <outlet property="quizView" destination="zxh-Hw-a7P" id="jJb-4t-nxg"/>
                         <outlet property="roundThis" destination="fps-WI-bey" id="Vs4-1I-VaZ"/>
                     </connections>
