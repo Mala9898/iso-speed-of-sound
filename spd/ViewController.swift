@@ -7,36 +7,96 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
         let imagePicker = UIImagePickerController()
     
+    @IBOutlet weak var uploadIndicatorView: UIActivityIndicatorView!
+    @IBOutlet weak var uploadButtonView: UIView!
+    @IBOutlet weak var uploadButton: UIButton!
+    @IBOutlet weak var selectButton: UIButton!
+    @IBOutlet weak var selectViewUnderline: UIView!
     @IBOutlet weak var scanImageView: UIImageView!
-    @IBAction func testUpload(sender: AnyObject) {
+ 
+    @IBAction func OnStartUpload(_ sender: AnyObject) {
         UploadRequest()
-//        imageUploadRequest(imageView: scanImageView, param: nil)
+        //        imageUploadRequest(imageView: scanImageView, param: nil)
     }
-
+    
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
-        scanImageView.contentMode = .ScaleAspectFit
+        
+        print("YESE")
+        
+        scanImageView.isHidden = false
+        uploadButtonView.isHidden = false
+        selectViewUnderline.isHidden = true
+        selectButton.isHidden = true 
+        scanImageView.contentMode = .scaleAspectFit
         scanImageView.image = image
         print("slecetcted: \(image.description)")
-        dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
         
     }
-    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
-        dismissViewControllerAnimated(true, completion: nil)
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        //info[UIImagePickerControllerOriginalImage] as? UIImage
+        scanImageView.isHidden = false
+        uploadButtonView.isHidden = false
+        selectViewUnderline.isHidden = true
+        selectButton.isHidden = true
+        scanImageView.contentMode = .scaleAspectFit
+        scanImageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        
+        dismiss(animated: true, completion: nil)
     }
-    @IBAction func OnImageSelect(sender: AnyObject) {
-        imagePicker.allowsEditing = false
-        imagePicker.sourceType = .PhotoLibrary
-        presentViewController(imagePicker, animated: true, completion: nil)
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
     }
+    
+    
+    @IBAction func SelectImage(_ sender: AnyObject) {
+        
+        let alertController = UIAlertController(title: "Select source", message: "", preferredStyle: .actionSheet)
+        let camera = UIAlertAction(title: "Camera", style: .default, handler: { (action) -> Void in
+            self.openCameraButton()
+        })
+        let photos = UIAlertAction(title: "Photos", style: .default) { (action) -> Void in
+            self.imagePicker.allowsEditing = false
+            self.imagePicker.sourceType = .photoLibrary
+            //present(self.imagePicker, animated: true, completion: nil)
+            //present(self.imagePicker, animated: true, completion: nil)
+            self.show(self.imagePicker, sender: nil)
+        }
+        let cancel = UIAlertAction(title: "Cancel", style: .destructive) { (action) -> Void in
+            alertController.dismiss(animated: true, completion: nil)
+        }
+        alertController.addAction(camera)
+        alertController.addAction(photos)
+        alertController.addAction(cancel)
+        
+        present(alertController, animated: true, completion: nil)
+        
+    }
+    
+    func openCameraButton() {
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
+            //var imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate=self
         // Do any additional setup after loading the view, typically from a nib.
+        uploadButtonView.layer.cornerRadius = 10
+        uploadButtonView.layer.opacity = 0.9
+        uploadButtonView.isHidden = true
+        scanImageView.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,87 +104,21 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         // Dispose of any resources that can be recreated.
     }
 
-    func UploadRequest()
-    {
-        let url = NSURL(string: "http://localhost:5757/ScumScammer/")
+    func UploadRequest(){
+        uploadButton.setTitle("", for: .normal)
+        uploadIndicatorView.startAnimating()
+        //let url = NSURL(string: "http://localhost:5757/ScumScammer/")
+        //let url = NSURL(string: "")
         
-        let request = NSMutableURLRequest(URL: url!)
-        request.HTTPMethod = "POST"
-        
-        let boundary = generateBoundaryString()
-        
-        //define the multipart request type
-        
-        request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
-        
-        if (scanImageView.image == nil)
-        {
-            return
-        }
-        
-        let image_data = UIImagePNGRepresentation(scanImageView.image!)
-        
-        
-        if(image_data == nil)
-        {
-            return
-        }
-        
-        
-        let body = NSMutableData()
-        
-        let fname = "test.png"
-        let mimetype = "image/png"
-        
-        //define the data post parameter
-        
-        body.appendData("--\(boundary)\r\n".dataUsingEncoding(NSUTF8StringEncoding)!)
-        body.appendData("Content-Disposition:form-data; name=\"test\"\r\n\r\n".dataUsingEncoding(NSUTF8StringEncoding)!)
-        body.appendData("hi\r\n".dataUsingEncoding(NSUTF8StringEncoding)!)
-        
-        
-        
-        body.appendData("--\(boundary)\r\n".dataUsingEncoding(NSUTF8StringEncoding)!)
-        body.appendData("Content-Disposition:form-data; name=\"file\"; filename=\"\(fname)\"\r\n".dataUsingEncoding(NSUTF8StringEncoding)!)
-        body.appendData("Content-Type: \(mimetype)\r\n\r\n".dataUsingEncoding(NSUTF8StringEncoding)!)
-        body.appendData(image_data!)
-        body.appendData("\r\n".dataUsingEncoding(NSUTF8StringEncoding)!)
-        
-        
-        body.appendData("--\(boundary)--\r\n".dataUsingEncoding(NSUTF8StringEncoding)!)
-        
-        
-        
-        request.HTTPBody = body
-        
-        
-        
-        let session = NSURLSession.sharedSession()
-        
-        
-        let task = session.dataTaskWithRequest(request) {
-            (
-            let data, let response, let error) in
-            
-            guard let _:NSData = data, let _:NSURLResponse = response  where error == nil else {
-                print("error")
-                return
-            }
-            
-            let dataString = NSString(data: data!, encoding: NSUTF8StringEncoding)
-            print(dataString)
-            
-        }
-        
-        task.resume()
-        
+        // JASON DO YOU MAGIC HERE
         
     }
     
-    
-    func generateBoundaryString() -> String
-    {
-        return "Boundary-\(NSUUID().UUIDString)"
+    func OnUploaded() {
+        self.uploadIndicatorView.stopAnimating()
+        self.uploadButton.setTitle("Done!", for: .normal)
+        print("<>end")
+        
     }
 }
 
