@@ -6,8 +6,6 @@ use_frameworks!
 
 target 'spd' do
     pod 'JNKeychain'
-    pod 'KeychainSwift', '~> 6.0'
-    pod 'Alamofire'
-    #pod 'SwiftyJSON'
+    pod 'AFNetworking'
 end
 
