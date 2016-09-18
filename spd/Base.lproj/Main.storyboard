@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="MJo-5b-Qju">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A313a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="MJo-5b-Qju">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -29,7 +29,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" id="h5i-gw-YG1">
                                 <frame key="frameInset" minX="11" minY="58" width="348" height="525"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <mutableString key="text">Determinants of Elasticity Perfecdy elastic and perfeedy inelastic demand curves are usually reserved for the hypothetical example, but they illustrate that E&amp; differs across consumer goods. Your intuition is that consumers respond to a price change in different ways. A 10 percent increase in the price of a car might have a drastically different consumer response from what we observe from a 10 percent increase in the price of a college education, a package of mechanical pencils, or a hotel stay in Fort Lauderdale. Lets look at some general explanations for why elasticity differs. 1.    Number of Good Substitutes If the price of good X increases, and many substitutes exist, the decrease in quantity demanded can be quite elastic. For this reason, we expect of orange juice to be high, since there are many substitutes available to drinkers of fruit juice. Corollary. Oftentimes you hear of a good that is a “necessity” or a “frivolity.” These adjectives are reiterating a relative lack of or a relative wealth of good substitutes. Example: The more narrowly the product is defined, the more elastic it becomes. If we narrow our focus from orange juice down to one brand of orange juice (e.g., Minute Maid), the number of substitutes grows and we predict that so too does the price elasticity of demand for Minute Maid brand orange juice. Likewise, the demand for blue Chevrolet SUVs is more elastic than the demand for Chevrolet SUVs, which, in turn, is more elastic than the demand for all SUVs. 2.    Proportion of Income If the price of a good increases, the consumer loses purchasing power. If that good takes up a large proportion of the consumer s income, he greatly feels the pinch of the income effect, and his responsiveness might be significant. If the price of toothpicks increased by 10 percent, the typical household probably would not feel the lost purchasing power and E&amp; would be low. The opposite would be true if the price of food items increased by 10 percent. Example: A young full-time college student is purchasing her education by the credit-hour and supporting herself with a part-time job on the weekends and evenings. Since the student is living on a relatively small monthly income, if the price of a credit-hour increases, the response might be very elastic. The student might drop down to part-time status or drop out of college altogether so that she can save enough money to return next quarter. 3.    Time Consumers faced by a rising price are usually fairly resourceful in their ability to find a way of decreasing the quantity demanded of a good.</mutableString>
+                                <string key="text">Determinants of Elasticity Perfecdy elastic and perfeedy inelastic demand curves are usually reserved for the hypothetical example, but they illustrate that E&amp; differs across consumer goods. Your intuition is that consumers respond to a price change in different ways. A 10 percent increase in the price of a car might have a drastically different consumer response from what we observe from a 10 percent increase in the price of a college education, a package of mechanical pencils, or a hotel stay in Fort Lauderdale. Lets look at some general explanations for why elasticity differs. 1.    Number of Good Substitutes If the price of good X increases, and many substitutes exist, the decrease in quantity demanded can be quite elastic. For this reason, we expect of orange juice to be high, since there are many substitutes available to drinkers of fruit juice. Corollary. Oftentimes you hear of a good that is a “necessity” or a “frivolity.” These adjectives are reiterating a relative lack of or a relative wealth of good substitutes. Example: The more narrowly the product is defined, the more elastic it becomes. If we narrow our focus from orange juice down to one brand of orange juice (e.g., Minute Maid), the number of substitutes grows and we predict that so too does the price elasticity of demand for Minute Maid brand orange juice. Likewise, the demand for blue Chevrolet SUVs is more elastic than the demand for Chevrolet SUVs, which, in turn, is more elastic than the demand for all SUVs. 2.    Proportion of Income If the price of a good increases, the consumer loses purchasing power. If that good takes up a large proportion of the consumer s income, he greatly feels the pinch of the income effect, and his responsiveness might be significant. If the price of toothpicks increased by 10 percent, the typical household probably would not feel the lost purchasing power and E&amp; would be low. The opposite would be true if the price of food items increased by 10 percent. Example: A young full-time college student is purchasing her education by the credit-hour and supporting herself with a part-time job on the weekends and evenings. Since the student is living on a relatively small monthly income, if the price of a credit-hour increases, the response might be very elastic. The student might drop down to part-time status or drop out of college altogether so that she can save enough money to return next quarter. 3.    Time Consumers faced by a rising price are usually fairly resourceful in their ability to find a way of decreasing the quantity demanded of a good.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -52,27 +52,6 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.074509803921568626" green="0.60392156862745094" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" id="zxh-Hw-a7P">
-                                <frame key="frameInset" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" id="NKo-wa-bQL">
-                                        <frame key="frameInset" minX="10" minY="224" width="355" height="219"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Elasticity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U6m-we-9ic">
-                                                <frame key="frameInset" minX="8" minY="8" width="339" height="203"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" red="0.074509803920000006" green="0.60392156860000001" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.14899864792823792" green="0.14903163909912109" blue="0.14899659156799316" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -81,7 +60,6 @@
                         <outlet property="buttonBackgroundView" destination="fps-WI-bey" id="Atq-uM-2NB"/>
                         <outlet property="cardText" destination="h5i-gw-YG1" id="xpo-4z-lha"/>
                         <outlet property="cardTitle" destination="j7E-uP-F75" id="7Hx-JS-ti6"/>
-                        <outlet property="quizView" destination="zxh-Hw-a7P" id="jJb-4t-nxg"/>
                         <outlet property="roundThis" destination="fps-WI-bey" id="Vs4-1I-VaZ"/>
                     </connections>
                 </viewController>

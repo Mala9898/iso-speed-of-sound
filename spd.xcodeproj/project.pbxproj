@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8F706B61CE3ECFA02B249267 /* Pods_spd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906AA0C4D8107A3C7B48EE48 /* Pods_spd.framework */; };
+		BE0D76A31D8ED5FA006E6FC6 /* SOSCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0D76A21D8ED5FA006E6FC6 /* SOSCardViewController.m */; };
+		BE0D76A61D8ED636006E6FC6 /* AutolayoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0D76A51D8ED636006E6FC6 /* AutolayoutHelper.m */; };
+		BE0D76A91D8ED63D006E6FC6 /* LinearLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0D76A81D8ED63D006E6FC6 /* LinearLayout.m */; };
+		BE0D76AC1D8ED70A006E6FC6 /* SOSCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0D76AB1D8ED70A006E6FC6 /* SOSCardView.m */; };
 		BE42D4B51D8E9B9C006C8232 /* SOSNote.m in Sources */ = {isa = PBXBuildFile; fileRef = BE42D4B41D8E9B9C006C8232 /* SOSNote.m */; };
 		BE42D4B81D8E9D06006C8232 /* SOSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BE42D4B71D8E9D06006C8232 /* SOSCategory.m */; };
 		BEDB9B701D8E8FF300900AAC /* SOSHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDB9B6F1D8E8FF300900AAC /* SOSHTTPSessionManager.m */; };
@@ -28,6 +32,14 @@
 		16F8C6BC4FAABAA5A06E7E75 /* Pods-spd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-spd/Pods-spd.debug.xcconfig"; sourceTree = "<group>"; };
 		226CCC667C4961DDBFCB510D /* Pods-spd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spd.release.xcconfig"; path = "Pods/Target Support Files/Pods-spd/Pods-spd.release.xcconfig"; sourceTree = "<group>"; };
 		906AA0C4D8107A3C7B48EE48 /* Pods_spd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE0D76A11D8ED5FA006E6FC6 /* SOSCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSCardViewController.h; sourceTree = "<group>"; };
+		BE0D76A21D8ED5FA006E6FC6 /* SOSCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSCardViewController.m; sourceTree = "<group>"; };
+		BE0D76A41D8ED636006E6FC6 /* AutolayoutHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutolayoutHelper.h; sourceTree = "<group>"; };
+		BE0D76A51D8ED636006E6FC6 /* AutolayoutHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutolayoutHelper.m; sourceTree = "<group>"; };
+		BE0D76A71D8ED63D006E6FC6 /* LinearLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinearLayout.h; sourceTree = "<group>"; };
+		BE0D76A81D8ED63D006E6FC6 /* LinearLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinearLayout.m; sourceTree = "<group>"; };
+		BE0D76AA1D8ED70A006E6FC6 /* SOSCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSCardView.h; sourceTree = "<group>"; };
+		BE0D76AB1D8ED70A006E6FC6 /* SOSCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSCardView.m; sourceTree = "<group>"; };
 		BE42D4B31D8E9B9C006C8232 /* SOSNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSNote.h; sourceTree = "<group>"; };
 		BE42D4B41D8E9B9C006C8232 /* SOSNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSNote.m; sourceTree = "<group>"; };
 		BE42D4B61D8E9D06006C8232 /* SOSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSCategory.h; sourceTree = "<group>"; };
@@ -126,12 +138,20 @@
 		C6CDF88C1D8DD28B00FB9177 /* spd */ = {
 			isa = PBXGroup;
 			children = (
+				BE0D76A41D8ED636006E6FC6 /* AutolayoutHelper.h */,
+				BE0D76A51D8ED636006E6FC6 /* AutolayoutHelper.m */,
+				BE0D76A71D8ED63D006E6FC6 /* LinearLayout.h */,
+				BE0D76A81D8ED63D006E6FC6 /* LinearLayout.m */,
 				C6CDF88D1D8DD28B00FB9177 /* AppDelegate.swift */,
 				C6CDF88F1D8DD28B00FB9177 /* ViewController.swift */,
 				BE42D4B91D8E9D0B006C8232 /* Model */,
 				BEDB9B711D8E8FF600900AAC /* Data Layer */,
 				C6AE93311D8E636100DD20AC /* spd-Bridging-Header.h */,
 				C6CDF8911D8DD28B00FB9177 /* Main.storyboard */,
+				BE0D76A11D8ED5FA006E6FC6 /* SOSCardViewController.h */,
+				BE0D76A21D8ED5FA006E6FC6 /* SOSCardViewController.m */,
+				BE0D76AA1D8ED70A006E6FC6 /* SOSCardView.h */,
+				BE0D76AB1D8ED70A006E6FC6 /* SOSCardView.m */,
 				C6AE93341D8E6F5500DD20AC /* LoginViewController.swift */,
 				C6AEFA7C1D8E389500B788F2 /* TextViewController.swift */,
 				C6CB6F131D8EC76900FFCCFA /* shitcode.swift */,
@@ -267,17 +287,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE0D76A31D8ED5FA006E6FC6 /* SOSCardViewController.m in Sources */,
 				BEDB9B701D8E8FF300900AAC /* SOSHTTPSessionManager.m in Sources */,
 				C6CB6F1A1D8ED18200FFCCFA /* SOSQuizlet.m in Sources */,
 				C6CB6F141D8EC76900FFCCFA /* shitcode.swift in Sources */,
 				BE42D4B51D8E9B9C006C8232 /* SOSNote.m in Sources */,
 				C6CB6F171D8ECFBC00FFCCFA /* SOSQuizletSessionManager.m in Sources */,
+				BE0D76A91D8ED63D006E6FC6 /* LinearLayout.m in Sources */,
 				C6CDF8901D8DD28B00FB9177 /* ViewController.swift in Sources */,
 				BE42D4B81D8E9D06006C8232 /* SOSCategory.m in Sources */,
 				C6CDF88E1D8DD28B00FB9177 /* AppDelegate.swift in Sources */,
 				C6AE93351D8E6F5500DD20AC /* LoginViewController.swift in Sources */,
 				C6AEFA7D1D8E389500B788F2 /* TextViewController.swift in Sources */,
 				C6AE93371D8E7BD400DD20AC /* NotesTableViewController.swift in Sources */,
+				BE0D76A61D8ED636006E6FC6 /* AutolayoutHelper.m in Sources */,
+				BE0D76AC1D8ED70A006E6FC6 /* SOSCardView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

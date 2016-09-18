@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class SOSQuizlet;
+
 @interface SOSCardViewController : UIViewController
+
+@property (nonatomic, strong) NSArray <SOSQuizlet *> *cards;
 
 @end
