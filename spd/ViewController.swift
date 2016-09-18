@@ -120,6 +120,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         print("<>end")
         
     }
+    
 }
+
 
 

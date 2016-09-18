@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6AEFA7D1D8E389500B788F2 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AEFA7C1D8E389500B788F2 /* TextViewController.swift */; };
 		C6CDF88E1D8DD28B00FB9177 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CDF88D1D8DD28B00FB9177 /* AppDelegate.swift */; };
 		C6CDF8901D8DD28B00FB9177 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CDF88F1D8DD28B00FB9177 /* ViewController.swift */; };
 		C6CDF8931D8DD28B00FB9177 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CDF8911D8DD28B00FB9177 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		0C6BA09F0B8C617B8706C9D0 /* Pods_spd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35C5EA9603F34F85EA8EE112 /* Pods-spd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-spd/Pods-spd.debug.xcconfig"; sourceTree = "<group>"; };
 		A362B9E70D94A46E2959A0AD /* Pods-spd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spd.release.xcconfig"; path = "Pods/Target Support Files/Pods-spd/Pods-spd.release.xcconfig"; sourceTree = "<group>"; };
+		C6AEFA7C1D8E389500B788F2 /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		C6CDF88A1D8DD28B00FB9177 /* spd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6CDF88D1D8DD28B00FB9177 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6CDF88F1D8DD28B00FB9177 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				C6CDF88D1D8DD28B00FB9177 /* AppDelegate.swift */,
 				C6CDF88F1D8DD28B00FB9177 /* ViewController.swift */,
 				C6CDF8911D8DD28B00FB9177 /* Main.storyboard */,
+				C6AEFA7C1D8E389500B788F2 /* TextViewController.swift */,
 				C6CDF8941D8DD28B00FB9177 /* Assets.xcassets */,
 				C6CDF8961D8DD28B00FB9177 /* LaunchScreen.storyboard */,
 				C6CDF8991D8DD28B00FB9177 /* Info.plist */,
@@ -214,6 +217,7 @@
 			files = (
 				C6CDF8901D8DD28B00FB9177 /* ViewController.swift in Sources */,
 				C6CDF88E1D8DD28B00FB9177 /* AppDelegate.swift in Sources */,
+				C6AEFA7D1D8E389500B788F2 /* TextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
