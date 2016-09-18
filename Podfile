@@ -2,8 +2,12 @@
 # platform :ios, '8.0'
 # Uncomment this line if you're using Swift
 use_frameworks!
+# source 'https://github.com/CocoaPods/Specs.git'
 
 target 'spd' do
-   pod 'Alamofire'
+    pod 'JNKeychain'
+    pod 'KeychainSwift', '~> 6.0'
+    pod 'Alamofire'
+    #pod 'SwiftyJSON'
 end
 

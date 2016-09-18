@@ -8,9 +8,9 @@
 
 import UIKit
 import Alamofire
-
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    //@IBOutlet weak var loadingINdicator: STSpotLoadView!
         let imagePicker = UIImagePickerController()
     
     @IBOutlet weak var uploadIndicatorView: UIActivityIndicatorView!
@@ -107,19 +107,31 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func UploadRequest(){
         uploadButton.setTitle("", for: .normal)
         uploadIndicatorView.startAnimating()
-        //let url = NSURL(string: "http://localhost:5757/ScumScammer/")
-        //let url = NSURL(string: "")
         
-        // JASON DO YOU MAGIC HERE
         
+        //let imageData = UIImagePNGRepresentation(self.scanImageView.image!)
+        let parameters: Parameters = [
+            "username": "stan",
+            "password": "hello"
+        ]
+        
+        //save the file in some cache.
+        //X-SOSAuthorizatio
+        
+      //////
+        //HERE
+        ///////
+
     }
     
     func OnUploaded() {
         self.uploadIndicatorView.stopAnimating()
+        //self.loadingINdicator.stopAnimation()
         self.uploadButton.setTitle("Done!", for: .normal)
         print("<>end")
         
     }
+    
     
 }
 

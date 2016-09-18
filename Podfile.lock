@@ -1,10 +1,16 @@
 PODS:
   - Alamofire (4.0.0)
+  - JNKeychain (0.1.4)
+  - KeychainSwift (6.0.2)
 
 DEPENDENCIES:
   - Alamofire
+  - JNKeychain
+  - KeychainSwift (~> 6.0)
 
 SPEC CHECKSUMS:
   Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
+  JNKeychain: fb6cc9ec95959ba46cd95d0ee6f7a05e41da9f42
+  KeychainSwift: a261364334000afa8fab0894390d5d00dd226d4c
 
 COCOAPODS: 0.39.0
