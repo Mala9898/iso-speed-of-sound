@@ -27,45 +27,25 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" id="h5i-gw-YG1">
-                                <frame key="frameInset" minX="11" minY="58" width="348" height="525"/>
+                                <frame key="frameInset" minX="11" minY="58" width="348" height="589"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <string key="text">Determinants of Elasticity Perfecdy elastic and perfeedy inelastic demand curves are usually reserved for the hypothetical example, but they illustrate that E&amp; differs across consumer goods. Your intuition is that consumers respond to a price change in different ways. A 10 percent increase in the price of a car might have a drastically different consumer response from what we observe from a 10 percent increase in the price of a college education, a package of mechanical pencils, or a hotel stay in Fort Lauderdale. Lets look at some general explanations for why elasticity differs. 1.    Number of Good Substitutes If the price of good X increases, and many substitutes exist, the decrease in quantity demanded can be quite elastic. For this reason, we expect of orange juice to be high, since there are many substitutes available to drinkers of fruit juice. Corollary. Oftentimes you hear of a good that is a “necessity” or a “frivolity.” These adjectives are reiterating a relative lack of or a relative wealth of good substitutes. Example: The more narrowly the product is defined, the more elastic it becomes. If we narrow our focus from orange juice down to one brand of orange juice (e.g., Minute Maid), the number of substitutes grows and we predict that so too does the price elasticity of demand for Minute Maid brand orange juice. Likewise, the demand for blue Chevrolet SUVs is more elastic than the demand for Chevrolet SUVs, which, in turn, is more elastic than the demand for all SUVs. 2.    Proportion of Income If the price of a good increases, the consumer loses purchasing power. If that good takes up a large proportion of the consumer s income, he greatly feels the pinch of the income effect, and his responsiveness might be significant. If the price of toothpicks increased by 10 percent, the typical household probably would not feel the lost purchasing power and E&amp; would be low. The opposite would be true if the price of food items increased by 10 percent. Example: A young full-time college student is purchasing her education by the credit-hour and supporting herself with a part-time job on the weekends and evenings. Since the student is living on a relatively small monthly income, if the price of a credit-hour increases, the response might be very elastic. The student might drop down to part-time status or drop out of college altogether so that she can save enough money to return next quarter. 3.    Time Consumers faced by a rising price are usually fairly resourceful in their ability to find a way of decreasing the quantity demanded of a good.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <view contentMode="scaleToFill" misplaced="YES" id="fps-WI-bey">
-                                <frame key="frameInset" minX="50.00%" width="267" height="48" maxY="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IX2-7l-g56">
-                                        <frame key="frameInset"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <state key="normal" title="Test Yourself">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="OpenQuizlet:" destination="gyh-44-SXp" eventType="touchUpInside" id="7hy-mh-tJ2"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.074509803921568626" green="0.60392156862745094" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.14899864792823792" green="0.14903163909912109" blue="0.14899659156799316" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Note" id="YQq-Pk-tMv"/>
                     <connections>
-                        <outlet property="buttonBackgroundView" destination="fps-WI-bey" id="Atq-uM-2NB"/>
                         <outlet property="cardText" destination="h5i-gw-YG1" id="xpo-4z-lha"/>
                         <outlet property="cardTitle" destination="j7E-uP-F75" id="7Hx-JS-ti6"/>
-                        <outlet property="roundThis" destination="fps-WI-bey" id="Vs4-1I-VaZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vNv-O4-sje" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="459" y="466"/>
+            <point key="canvasLocation" x="458.5" y="465.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
