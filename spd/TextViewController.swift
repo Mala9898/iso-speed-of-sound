@@ -11,12 +11,17 @@ import UIKit
 
 class TextViewController: UIViewController {
 
-   
+    var SOS = SOSHTTPSessionManager.shared()
+    
+    @IBOutlet weak var cardTitle: UILabel!
+    @IBOutlet weak var cardText: UITextView!
+    
     
     @IBOutlet weak var quizView: UIView!
 
     @IBOutlet weak var cardView: UIView!
     
+    @IBOutlet weak var roundThis: UIView!
     @IBAction func OpenQuizlet(_ sender: AnyObject) {
       
         //var draggableViewBackground =
@@ -30,8 +35,10 @@ class TextViewController: UIViewController {
         super.viewDidLoad()
         cardView.layer.cornerRadius = 25
         quizView.frame.origin.y = UIScreen.main.bounds.height
-
+        roundThis.layer.cornerRadius = 25
         // Do any additional setup after loading the view.
+        cardTitle.text = SOS?.note.title
+        cardText.text = SOS?.note.summary
     }
 
     override func didReceiveMemoryWarning() {

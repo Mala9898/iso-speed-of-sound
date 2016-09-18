@@ -14,8 +14,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Microeconomics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="j7E-uP-F75">
-                                <frame key="frameInset" minX="16" minY="20" width="318" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Scan from Thursday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="j7E-uP-F75">
+                                <frame key="frameInset" minX="16" minY="20" width="339" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -27,9 +27,9 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" id="h5i-gw-YG1">
-                                <frame key="frameInset" minX="11" minY="58" width="348" height="488"/>
+                                <frame key="frameInset" minX="11" minY="58" width="348" height="525"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <mutableString key="text">Determinants of Elasticity Perfecdy elastic and perfeedy inelastic demand curves are usually reserved for the hypothetical example, but they illustrate that E&amp; differs across consumer goods. Your intuition is that consumers respond to a price change in different ways. A 10 percent increase in the price of a car might have a drastically different consumer response from what we observe from a 10 percent increase in the price of a college education, a package of mechanical pencils, or a hotel stay in Fort Lauderdale. Lets look at some general explanations for why elasticity differs. 1.    Number of Good Substitutes If the price of good X increases, and many substitutes exist, the decrease in quantity demanded can be quite elastic. For this reason, we expect of orange juice to be high, since there are many substitutes available to drinkers of fruit juice. Corollary. Oftentimes you hear of a good that is a “necessity” or a “frivolity.” These adjectives are reiterating a relative lack of or a relative wealth of good substitutes. Example: The more narrowly the product is defined, the more elastic it becomes. If we narrow our focus from orange juice down to one brand of orange juice (e.g., Minute Maid), the number of substitutes grows and we predict that so too does the price elasticity of demand for Minute Maid brand orange juice. Likewise, the demand for blue Chevrolet SUVs is more elastic than the demand for Chevrolet SUVs, which, in turn, is more elastic than the demand for all SUVs. 2.    Proportion of Income If the price of a good increases, the consumer loses purchasing power. If that good takes up a large proportion of the consumer s income, he greatly feels the pinch of the income effect, and his responsiveness might be significant. If the price of toothpicks increased by 10 percent, the typical household probably would not feel the lost purchasing power and E&amp; would be low. The opposite would be true if the price of food items increased by 10 percent. Example: A young full-time college student is purchasing her education by the credit-hour and supporting herself with a part-time job on the weekends and evenings. Since the student is living on a relatively small monthly income, if the price of a credit-hour increases, the response might be very elastic. The student might drop down to part-time status or drop out of college altogether so that she can save enough money to return next quarter. 3.    Time Consumers faced by a rising price are usually fairly resourceful in their ability to find a way of decreasing the quantity demanded of a good.</mutableString>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -60,7 +60,7 @@
                                         <frame key="frameInset" minX="10" minY="224" width="355" height="219"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Supply and Demand" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U6m-we-9ic">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Elasticity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U6m-we-9ic">
                                                 <frame key="frameInset" minX="8" minY="8" width="339" height="203"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -79,13 +79,16 @@
                     <navigationItem key="navigationItem" title="Note" id="YQq-Pk-tMv"/>
                     <connections>
                         <outlet property="buttonBackgroundView" destination="fps-WI-bey" id="Atq-uM-2NB"/>
+                        <outlet property="cardText" destination="h5i-gw-YG1" id="xpo-4z-lha"/>
+                        <outlet property="cardTitle" destination="j7E-uP-F75" id="7Hx-JS-ti6"/>
                         <outlet property="cardView" destination="NKo-wa-bQL" id="lPu-dT-Iw7"/>
                         <outlet property="quizView" destination="zxh-Hw-a7P" id="jJb-4t-nxg"/>
+                        <outlet property="roundThis" destination="fps-WI-bey" id="Vs4-1I-VaZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vNv-O4-sje" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1227" y="-440"/>
+            <point key="canvasLocation" x="459" y="466"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -147,11 +150,12 @@
                         <outlet property="uploadButton" destination="Dlv-7d-TqX" id="s9f-Z6-1te"/>
                         <outlet property="uploadButtonView" destination="bQX-8Q-QdQ" id="irY-V2-1em"/>
                         <outlet property="uploadIndicatorView" destination="YzA-qH-NDc" id="xgB-Ek-IaR"/>
+                        <segue destination="gyh-44-SXp" kind="modal" identifier="show" id="ROw-GF-isl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1121" y="435"/>
+            <point key="canvasLocation" x="-32" y="466"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="8zH-Tk-1dO">
@@ -161,11 +165,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background" id="CgE-Ug-vJ2">
+                                <frame key="frameInset" minY="-2" width="375" height="669"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <view contentMode="scaleToFill" id="t5e-1b-9SL">
                                 <frame key="frameInset" minX="20" minY="239" height="41" maxX="20"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" id="reI-qL-owB">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" id="reI-qL-owB">
                                         <frame key="frameInset" minX="2.84%" width="94.33%" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
@@ -224,16 +232,21 @@
                                     <color key="titleColor" red="0.99987119436264038" green="0.99998223781585693" blue="0.99984109401702881" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="B1Q-iV-XMJ" kind="modal" modalTransitionStyle="flipHorizontal" id="d8S-D1-gWQ"/>
+                                    <action selector="OnLoginButton:" destination="MJo-5b-Qju" eventType="touchUpInside" id="l6L-UT-G8Q"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.11181601881980896" green="0.11183752119541168" blue="0.11181245744228363" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="fieldEmail" destination="reI-qL-owB" id="VWe-M8-Lxt"/>
+                        <outlet property="fieldPassword" destination="hk6-Tt-SdI" id="oTL-vF-bLI"/>
+                        <segue destination="BYZ-38-t0r" kind="modal" identifier="login" id="qHe-Iy-83J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v7i-OA-AMO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-344" y="287"/>
+            <point key="canvasLocation" x="-632" y="466"/>
         </scene>
         <!--Notes-->
         <scene sceneID="trC-h1-xEA">
@@ -248,7 +261,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JrG-al-toU" id="09C-67-PnS">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -297,10 +310,14 @@
     </scenes>
     <resources>
         <image name="Literature-100" width="50" height="48"/>
+        <image name="background" width="187" height="333"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="qHe-Iy-83J"/>
+    </inferredMetricsTieBreakers>
 </document>

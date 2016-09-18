@@ -7,12 +7,12 @@
 //
 
 import UIKit
-import Alamofire
+//import Alamofire
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     //@IBOutlet weak var loadingINdicator: STSpotLoadView!
         let imagePicker = UIImagePickerController()
-    
+    let SOS = SOSHTTPSessionManager.shared()
     @IBOutlet weak var uploadIndicatorView: UIActivityIndicatorView!
     @IBOutlet weak var uploadButtonView: UIView!
     @IBOutlet weak var uploadButton: UIButton!
@@ -107,13 +107,21 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func UploadRequest(){
         uploadButton.setTitle("", for: .normal)
         uploadIndicatorView.startAnimating()
+        SOS?.uploadImage(scanImageView.image!, completion: { (error, response) in
+            if (error != nil) {
+                self.uploadIndicatorView.stopAnimating()
+                print("error")
+            } else {
+                self.SOS?.note = response as! SOSNote!
+                self.DoneUploaded()
+            }
+            
+        })
+        
         
         
         //let imageData = UIImagePNGRepresentation(self.scanImageView.image!)
-        let parameters: Parameters = [
-            "username": "stan",
-            "password": "hello"
-        ]
+       
         
         //save the file in some cache.
         //X-SOSAuthorizatio
@@ -122,6 +130,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         //HERE
         ///////
 
+    }
+    func DoneUploaded(){
+        performSegue(withIdentifier: "show", sender: self)
     }
     
     func OnUploaded() {

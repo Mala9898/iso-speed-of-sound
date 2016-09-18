@@ -7,51 +7,49 @@
 //
 
 import UIKit
-import Alamofire
-import KeychainSwift
+//import Alamofire
+//import KeychainSwift
+
 //import SwiftyJSON
 
 class LoginViewController: UIViewController {
 
-    let keychain = KeychainSwift()
+   // let keychain = KeychainSwift()
+    let SOSSession = SOSHTTPSessionManager.shared()
     
+    @IBOutlet weak var fieldEmail: UITextField!
+    @IBOutlet weak var fieldPassword: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        Login()
+        
         // Do any additional setup after loading the view.
     }
     func Login() {
-        let parameters: Parameters = [
-            "username": "stan",
-            "password": "hello"
-            
-        ]
-        Alamofire.request("http://sos.joseb.me/api/user/login", method: .post, parameters: parameters, encoding: JSONEncoding.default).validate().responseJSON { response in
-            switch response.result {
-                case .success:
-                    print("Validation Successful \n\n\n <YYYYY>\(response)")
-                case .failure(let error):
-                    print(error)
-            }
-        }
+  
     }
-    func CreateUser(){
-        let parameters: Parameters = [
-            "username": "stan",
-            "password": "hello"
-            
-        ]
-        Alamofire.request("http://sos.joseb.me/api/user/create", method: .post, parameters: parameters, encoding: JSONEncoding.default).validate().responseJSON { response in
-            switch response.result {
-            case .success(let data):
-                print("Validation Successful \n\n\n <YYYYY>\(response)")
-                //keychain.set(response.results(["token"], forKey: "token") 
-
-            case .failure(let error):
-                print(error)
+    @IBAction func OnLoginButton(_ sender: AnyObject) {
+        var username = fieldEmail.text! as String
+        var password = fieldPassword.text! as String
+        
+        SOSSession?.login(withUsername: username, password: password, completion: { error in
+            if error == nil{
+                print("success")
+                    self.move()
+            } else {
+                print("failed to login \(error)!    ")
             }
-        }
+        })
+        
+    }
+    func move (){
+        performSegue(withIdentifier: "login", sender: self)
+
+    }
+    //non login, both an error and an id
+    func CreateUser(){
+     
+ 
     }
 
     override func didReceiveMemoryWarning() {

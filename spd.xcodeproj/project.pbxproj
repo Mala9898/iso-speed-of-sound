@@ -14,6 +14,7 @@
 		C6AE93351D8E6F5500DD20AC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE93341D8E6F5500DD20AC /* LoginViewController.swift */; };
 		C6AE93371D8E7BD400DD20AC /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE93361D8E7BD400DD20AC /* NotesTableViewController.swift */; };
 		C6AEFA7D1D8E389500B788F2 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AEFA7C1D8E389500B788F2 /* TextViewController.swift */; };
+		C6CB6F141D8EC76900FFCCFA /* shitcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CB6F131D8EC76900FFCCFA /* shitcode.swift */; };
 		C6CDF88E1D8DD28B00FB9177 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CDF88D1D8DD28B00FB9177 /* AppDelegate.swift */; };
 		C6CDF8901D8DD28B00FB9177 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CDF88F1D8DD28B00FB9177 /* ViewController.swift */; };
 		C6CDF8931D8DD28B00FB9177 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CDF8911D8DD28B00FB9177 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		C6AE93341D8E6F5500DD20AC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C6AE93361D8E7BD400DD20AC /* NotesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
 		C6AEFA7C1D8E389500B788F2 /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		C6CB6F131D8EC76900FFCCFA /* shitcode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shitcode.swift; sourceTree = "<group>"; };
 		C6CDF88A1D8DD28B00FB9177 /* spd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6CDF88D1D8DD28B00FB9177 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6CDF88F1D8DD28B00FB9177 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				C6CDF8911D8DD28B00FB9177 /* Main.storyboard */,
 				C6AE93341D8E6F5500DD20AC /* LoginViewController.swift */,
 				C6AEFA7C1D8E389500B788F2 /* TextViewController.swift */,
+				C6CB6F131D8EC76900FFCCFA /* shitcode.swift */,
 				C6AE93361D8E7BD400DD20AC /* NotesTableViewController.swift */,
 				C6CDF8941D8DD28B00FB9177 /* Assets.xcassets */,
 				C6CDF8961D8DD28B00FB9177 /* LaunchScreen.storyboard */,
@@ -255,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEDB9B701D8E8FF300900AAC /* SOSHTTPSessionManager.m in Sources */,
+				C6CB6F141D8EC76900FFCCFA /* shitcode.swift in Sources */,
 				BE42D4B51D8E9B9C006C8232 /* SOSNote.m in Sources */,
 				C6CDF8901D8DD28B00FB9177 /* ViewController.swift in Sources */,
 				BE42D4B81D8E9D06006C8232 /* SOSCategory.m in Sources */,

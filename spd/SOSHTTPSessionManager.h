@@ -11,7 +11,11 @@
 typedef void (^SOSHTTPBinaryCompletionLevelBlock)(NSError *error);
 typedef void (^SOSHTTPResponseBlock)(NSError *error, id response);
 
+@class SOSNote;
+
 @interface SOSHTTPSessionManager : AFHTTPSessionManager
+
+@property (nonatomic) SOSNote *note;
 
 
 + (instancetype)sharedManager;

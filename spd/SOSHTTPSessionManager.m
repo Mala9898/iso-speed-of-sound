@@ -43,7 +43,7 @@ static NSString * const kSOSAuthTokenKey = @"com.sos.authtoken.key";
 - (void)setAuthorizationHeader {
     NSString *authToken = [JNKeychain loadValueForKey:kSOSAuthTokenKey];
     if (authToken && authToken.length > 0) {
-        [self.requestSerializer setValue:authToken forHTTPHeaderField:@"Authorization"];
+        [self.requestSerializer setValue:authToken forHTTPHeaderField:@"X-SOS-Authentication"];
     }
 }
 
